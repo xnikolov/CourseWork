@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Upload";
+}
+
+<link href="@Url.Content("~/css/Upload.css")" rel="stylesheet" type="text/css" />
+
+<h1><strong>Upload</strong></h1>
+<p><strong>___________________________________________</strong></p>
+
+<h2>Upload Your Beautiful Images</h2>
+<aside>
+    <img src="/500.png" />
+</aside>
+
+
+
+<form method="post" action="/Home/Gallery" enctype="multipart/form-data">
+
+
+    <input class="file" accept="image/png,image/jpg,image/jpeg" type="file" name="pic" />
+    <br>
+    <input type="text" name="keywords" placeholder="Adding at least 10 keywords to make your photo become more discoverable" style="font-style: italic; width:500px"  />
+    <br>
+    <input type="text" name="fullName" placeholder="Title" style="font-style: italic" />
+    <br />
+    <input type="text" name="description" placeholder="Tell us more about your beautiful photo" style="font-style: italic; width: 320px; padding:30px"  />
+    <br>
+
+    <br>
+    <input id="uploadBtn" type="submit" value="Upload"/>
+
+</form>
+
+
+
+
+

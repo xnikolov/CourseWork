@@ -1,0 +1,25 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    text-align: center;
+}
+
+
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.attributions {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
